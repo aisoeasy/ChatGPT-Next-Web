@@ -6,6 +6,8 @@ import { BOT_HELLO } from "./chat";
 import { ALL_MODELS } from "./config";
 
 export interface AccessControlStore {
+  secretId: string;
+  secretKey: string;
   accessCode: string;
   token: string;
 
@@ -13,6 +15,8 @@ export interface AccessControlStore {
   hideUserApiKey: boolean;
   openaiUrl: string;
 
+  updateSecretId(_: string): void;
+  updateSecretKey(_: string): void;
   updateToken: (_: string) => void;
   updateCode: (_: string) => void;
   enabledAccessControl: () => boolean;
@@ -25,12 +29,19 @@ let fetchState = 0; // 0 not fetch, 1 fetching, 2 done
 export const useAccessStore = create<AccessControlStore>()(
   persist(
     (set, get) => ({
+      secretId: "",
+      secretKey: "",
       token: "",
       accessCode: "",
       needCode: true,
       hideUserApiKey: false,
       openaiUrl: "/api/openai/",
-
+      updateSecretId(secretId: string) {
+        set(() => ({ secretId }));
+      },
+      updateSecretKey(secretKey: string) {
+        set(() => ({ secretKey }));
+      },
       enabledAccessControl() {
         get().fetch();
 

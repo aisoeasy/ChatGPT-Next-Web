@@ -6,7 +6,11 @@ const PROTOCOL = process.env.PROTOCOL ?? DEFAULT_PROTOCOL;
 const BASE_URL = process.env.BASE_URL ?? OPENAI_URL;
 
 export async function requestOpenai(req: NextRequest) {
-  const authValue = req.headers.get("Authorization") ?? "";
+  //const authValue = req.headers.get("Authorization") ?? "";
+  const secretId = req.headers.get("secretId") ?? "";
+  const timestamp = req.headers.get("timestamp") ?? "";
+  const requestId = req.headers.get("requestId") ?? "";
+  const sign = req.headers.get("sign") ?? "";
   const openaiPath = `${req.nextUrl.pathname}${req.nextUrl.search}`.replaceAll(
     "/api/openai/",
     "",
@@ -26,12 +30,20 @@ export async function requestOpenai(req: NextRequest) {
   }
 
   return fetch(`${baseUrl}/${openaiPath}`, {
-    headers: {
+    /*headers: {
       "Content-Type": "application/json",
       Authorization: authValue,
       ...(process.env.OPENAI_ORG_ID && {
         "OpenAI-Organization": process.env.OPENAI_ORG_ID,
       }),
+    },*/
+    headers: {
+      "Content-Type": "application/json;charset=UTF-8",
+      "Content-Encoding": "utf-8",
+      secretId: secretId,
+      timestamp: timestamp,
+      requestId: requestId,
+      sign: sign,
     },
     cache: "no-store",
     method: req.method,

@@ -497,6 +497,33 @@ export function Settings() {
             <></>
           )}
 
+          <ListItem
+            title={Locale.Settings.SecretId.Title}
+            subTitle={Locale.Settings.SecretId.SubTitle}
+          >
+            <PasswordInput
+              value={accessStore.secretId}
+              type="text"
+              placeholder={Locale.Settings.SecretId.Placeholder}
+              onChange={(e) => {
+                accessStore.updateSecretId(e.currentTarget.value);
+              }}
+            />
+          </ListItem>
+          <ListItem
+            title={Locale.Settings.SecretKey.Title}
+            subTitle={Locale.Settings.SecretKey.SubTitle}
+          >
+            <PasswordInput
+              value={accessStore.secretKey}
+              type="text"
+              placeholder={Locale.Settings.SecretKey.Placeholder}
+              onChange={(e) => {
+                accessStore.updateSecretKey(e.currentTarget.value);
+              }}
+            />
+          </ListItem>
+
           {!accessStore.hideUserApiKey ? (
             <ListItem
               title={Locale.Settings.Token.Title}
