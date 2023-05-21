@@ -137,6 +137,16 @@ const en: LocaleType = {
       SubTitle:
         "Will compress if uncompressed messages length exceeds the value",
     },
+    SecretId: {
+      Title: "密钥ID",
+      SubTitle: "填写密钥ID",
+      Placeholder: "SecretId",
+    },
+    SecretKey: {
+      Title: "密钥Key",
+      SubTitle: "填写密钥Key",
+      Placeholder: "SecretKey",
+    },
     Token: {
       Title: "API Key",
       SubTitle: "Use your key to ignore access code limit",

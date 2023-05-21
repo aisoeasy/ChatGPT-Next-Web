@@ -510,6 +510,7 @@ export function Settings() {
               }}
             />
           </ListItem>
+
           <ListItem
             title={Locale.Settings.SecretKey.Title}
             subTitle={Locale.Settings.SecretKey.SubTitle}
