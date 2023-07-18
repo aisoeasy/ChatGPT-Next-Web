@@ -82,7 +82,7 @@ export const useAccessStore = create<AccessControlStore>()(
           method: "post",
           body: null,
           headers: {
-            ...getHeaders(),
+            ...getHeaders("/api/config"),
           },
         })
           .then((res) => res.json())
