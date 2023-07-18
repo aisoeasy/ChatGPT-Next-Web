@@ -1,15 +1,15 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="预览"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<h1 align="center">AI So Easy</h1>
 
 Implemente su aplicación web privada ChatGPT de forma gratuita con un solo clic.
 
-[Demo demo](https://chat-gpt-next-web.vercel.app/) / [Problemas de comentarios](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Únete a Discord](https://discord.gg/zrhvHCr79N) / [Grupo QQ](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [Desarrolladores de consejos](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [Donar](#捐赠-donate-usdt)
+[Demo demo](https://chat-gpt-next-web.vercel.app/) / [Problemas de comentarios](https://github.com/Yidadaa/AI-So-Easy/issues) / [Únete a Discord](https://discord.gg/zrhvHCr79N) / [Grupo QQ](https://user-images.githubusercontent.com/16968934/228190818-7dd00845-e9b9-4363-97e5-44c507ac76da.jpeg) / [Desarrolladores de consejos](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) / [Donar](#捐赠-donate-usdt)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web\&env=OPENAI_API_KEY\&env=CODE\&project-name=chatgpt-next-web\&repository-name=ChatGPT-Next-Web)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FAI-So-Easy\&env=OPENAI_API_KEY\&env=CODE\&project-name=ai-so-easy\&repository-name=AI-So-Easy)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/AI-So-Easy)
 
 ![主界面](./docs/images/cover.png)
 
@@ -19,7 +19,7 @@ Implemente su aplicación web privada ChatGPT de forma gratuita con un solo clic
 
 1.  Prepara el tuyo [Clave API OpenAI](https://platform.openai.com/account/api-keys);
 2.  Haga clic en el botón de la derecha para iniciar la implementación:
-    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web\&env=OPENAI_API_KEY\&env=CODE\&project-name=chatgpt-next-web\&repository-name=ChatGPT-Next-Web), inicie sesión directamente con su cuenta de Github y recuerde completar la clave API y la suma en la página de variables de entorno[Contraseña de acceso a la página](#配置页面访问密码) CÓDIGO;
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FAI-So-Easy\&env=OPENAI_API_KEY\&env=CODE\&project-name=ai-so-easy\&repository-name=AI-So-Easy), inicie sesión directamente con su cuenta de Github y recuerde completar la clave API y la suma en la página de variables de entorno[Contraseña de acceso a la página](#配置页面访问密码) CÓDIGO;
 3.  Una vez implementado, puede comenzar;
 4.  (Opcional)[Enlazar un nombre de dominio personalizado](https://vercel.com/docs/concepts/projects/domains/add-a-domain): El nombre de dominio DNS asignado por Vercel está contaminado en algunas regiones y puede conectarse directamente enlazando un nombre de dominio personalizado.
 
@@ -52,7 +52,7 @@ Puede destacar / ver este proyecto o seguir al autor para recibir notificaciones
 
 > Después de configurar la contraseña, el usuario debe completar manualmente el código de acceso en la página de configuración para chatear normalmente, de lo contrario, se solicitará el estado no autorizado a través de un mensaje.
 
-> **advertir**: Asegúrese de establecer el número de dígitos de la contraseña lo suficientemente largo, preferiblemente más de 7 dígitos, de lo contrario[Será volado](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/518)。
+> **advertir**: Asegúrese de establecer el número de dígitos de la contraseña lo suficientemente largo, preferiblemente más de 7 dígitos, de lo contrario[Será volado](https://github.com/Yidadaa/AI-So-Easy/issues/518)。
 
 Este proyecto proporciona control de permisos limitado, agregue el nombre al nombre en la página Variables de entorno del Panel de control del proyecto Vercel `CODE` Variables de entorno con valores para contraseñas personalizadas separadas por comas:
 
@@ -106,7 +106,7 @@ Si no desea que los usuarios consulte el saldo, establezca esta variable de ento
 
 Haga clic en el botón de abajo para iniciar el desarrollo secundario:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/AI-So-Easy)
 
 Antes de empezar a escribir código, debe crear uno nuevo en la raíz del proyecto `.env.local` archivo, lleno de variables de entorno:
 
@@ -127,12 +127,12 @@ Antes de empezar a escribir código, debe crear uno nuevo en la raíz del proyec
 > ⚠️ Nota: Las versiones de Docker están de 1 a 2 días por detrás de la última versión la mayor parte del tiempo, por lo que es normal que sigas diciendo "La actualización existe" después de la implementación.
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull yidadaa/ai-so-easy
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY="sk-xxxx" \
    -e CODE="页面访问密码" \
-   yidadaa/chatgpt-next-web
+   yidadaa/ai-so-easy
 ```
 
 También puede especificar proxy:
@@ -143,7 +143,7 @@ docker run -d -p 3000:3000 \
    -e CODE="页面访问密码" \
    --net=host \
    -e PROXY_URL="http://127.0.0.1:7890" \
-   yidadaa/chatgpt-next-web
+   yidadaa/ai-so-easy
 ```
 
 Si necesita especificar otras variables de entorno, agréguelas usted mismo en el comando anterior `-e 环境变量=环境变量值` para especificar.
@@ -153,7 +153,7 @@ Si necesita especificar otras variables de entorno, agréguelas usted mismo en e
 Ejecute el siguiente comando en la consola:
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/Yidadaa/AI-So-Easy/main/scripts/setup.sh)
 ```
 
 ⚠️ Nota: Si tiene problemas durante la instalación, utilice la implementación de Docker.
@@ -166,7 +166,7 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ### Colaboradores
 
-[Ver la lista de colaboradores del proyecto](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
+[Ver la lista de colaboradores del proyecto](https://github.com/Yidadaa/AI-So-Easy/graphs/contributors)
 
 ## Licencia de código abierto
 
