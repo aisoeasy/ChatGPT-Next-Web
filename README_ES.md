@@ -28,9 +28,9 @@ Implemente su aplicación web privada ChatGPT de forma gratuita con un solo clic
 Si sigue los pasos anteriores para implementar su proyecto con un solo clic, es posible que siempre diga "La actualización existe" porque Vercel creará un nuevo proyecto para usted de forma predeterminada en lugar de bifurcar el proyecto, lo que evitará que la actualización se detecte correctamente.
 Le recomendamos que siga estos pasos para volver a implementar:
 
-*   Eliminar el repositorio original;
-*   Utilice el botón de bifurcación en la esquina superior derecha de la página para bifurcar este proyecto;
-*   En Vercel, vuelva a seleccionar e implementar,[Echa un vistazo al tutorial detallado](./docs/vercel-cn.md#如何新建项目)。
+- Eliminar el repositorio original;
+- Utilice el botón de bifurcación en la esquina superior derecha de la página para bifurcar este proyecto;
+- En Vercel, vuelva a seleccionar e implementar,[Echa un vistazo al tutorial detallado](./docs/vercel-cn.md#如何新建项目)。
 
 ### Activar actualizaciones automáticas
 
@@ -170,6 +170,4 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/AI-So-Easy/main/scripts
 
 ## Licencia de código abierto
 
-> Contra 996, empezando por mí.
-
-[Licencia Anti 996](https://github.com/kattgu7/Anti-996-License/blob/master/LICENSE_CN_EN)
+[MIT](https://opensource.org/license/mit/)
